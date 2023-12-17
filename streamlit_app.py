@@ -7,6 +7,7 @@ def read_pdf_page(file, page_number):
 
     pdfReader = PdfReader(file)
     page = pdfReader.pages[page_number]
+    st.write(type(page.extract_text()))
     return page.extract_text()
 
 
