@@ -34,7 +34,7 @@ def main():
         #image = images[selected_page]
 
         # Create two columns to display the image and text
-        col1, col2 = st.columns(2)
+        #col1, col2 = st.columns(2)
 
         # Display the image in the first column
         #col1.image(image, caption=f"Page {selected_page + 1}")
@@ -43,7 +43,7 @@ def main():
         # if "page_text" not in st.session_state:
         #     st.session_state.page_text =
 
-        col2.text_area("Page Text", height=800, value=read_pdf_page(pdf_file, selected_page),
+        st.text_area("Page Text", height=800, value=read_pdf_page(pdf_file, selected_page),
                        key="my_text_area", on_change=on_text_area_change)
 
 
