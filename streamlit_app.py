@@ -45,7 +45,7 @@ def main():
         # if "page_text" not in st.session_state:
         #     st.session_state.page_text =
 
-        col2.text_area(None, height=800, value=read_pdf_page(pdf_file, selected_page),
+        col2.text_area("Text", height=800, value=read_pdf_page(pdf_file, selected_page),
                        key="my_text_area", on_change=on_text_area_change)
 
 
