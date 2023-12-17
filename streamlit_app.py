@@ -46,8 +46,5 @@ def main():
         col2.text_area("Extracted Text", height=400, value=read_pdf_page(pdf_file, selected_page),
                        key="my_text_area", on_change=on_text_area_change)
 
-        selection = st.btn_select(('option 1', 'option 2', 'option 3'))
-        st.write('selection')
-
 if __name__ == '__main__':
     main()
