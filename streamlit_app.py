@@ -18,7 +18,7 @@ def on_text_area_change():
 def main():
 
     st.set_page_config(page_title="Resume Highlighter")
-    st.title("PDF Upload and Display")
+    st.title("Resume Highlighter")
 
     # PDF file upload
     pdf_file = st.file_uploader("Upload a PDF file", type=["pdf"])
