@@ -43,7 +43,7 @@ def main():
         # Display the image in the first column
         col1.image(image, caption=f"Page {selected_page + 1}")
 
-        col2.text_area("Text", height=800, value=read_pdf_page(pdf_file, selected_page),
+        col2.text_area("Text", height=500, value=read_pdf_page(pdf_file, selected_page),
                        key="my_text_area", on_change=on_text_area_change)
 
 
