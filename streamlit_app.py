@@ -1,6 +1,5 @@
 import streamlit as st
-st.set_page_config(layout="wide")
-st.set_page_config(page_title="Resume Highlighter")
+#st.set_page_config(layout="wide")
 
 from pdf2image import convert_from_bytes
 from PIL import Image
@@ -20,6 +19,7 @@ def on_text_area_change():
 
 def main():
 
+    st.set_page_config(page_title="Resume Highlighter")
     st.title("Resume Highlighter")
 
     # PDF file upload
