@@ -17,7 +17,7 @@ def on_text_area_change():
 
 def main():
 
-    st.set_page_config(page_title="PDF Upload and Display")
+    st.set_page_config(page_title="Resume Highlighter")
     st.title("PDF Upload and Display")
 
     # PDF file upload
@@ -45,7 +45,7 @@ def main():
         # if "page_text" not in st.session_state:
         #     st.session_state.page_text =
 
-        st.text_area("Page Text", height=800, value=read_pdf_page(pdf_file, selected_page),
+        col2.text_area("Page Text", height=800, value=read_pdf_page(pdf_file, selected_page),
                        key="my_text_area", on_change=on_text_area_change)
 
 
