@@ -7,7 +7,7 @@ def read_pdf_page(file, page_number):
 
     pdfReader = PdfReader(file)
     page = pdfReader.pages[page_number]
-    return page.extract_text().replace('\n\n', '\n')
+    return page.extract_text().replace('\n\n', '\n')[:5]
 
 
 def on_text_area_change():
