@@ -1,4 +1,5 @@
 import streamlit as st
+st.set_page_config(layout="wide")
 from pdf2image import convert_from_bytes
 from PIL import Image
 from PyPDF2 import PdfReader
