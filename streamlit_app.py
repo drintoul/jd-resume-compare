@@ -1,5 +1,5 @@
 import streamlit as st
-from pdf2image import convert_from_bytes
+#from pdf2image import convert_from_bytes
 from PIL import Image
 
 
@@ -30,14 +30,14 @@ def main():
         selected_page = st.selectbox("Select a page", page_numbers)
         selected_page -= 1
         # Convert the selected page to an image
-        images = convert_from_bytes(pdf_file.getvalue())
-        image = images[selected_page]
+        #images = convert_from_bytes(pdf_file.getvalue())
+        #image = images[selected_page]
 
         # Create two columns to display the image and text
         col1, col2 = st.columns(2)
 
         # Display the image in the first column
-        col1.image(image, caption=f"Page {selected_page + 1}")
+        #col1.image(image, caption=f"Page {selected_page + 1}")
 
         # Display the content of the selected page in the second column
         # if "page_text" not in st.session_state:
