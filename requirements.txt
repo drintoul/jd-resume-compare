@@ -1,3 +1,4 @@
 streamlit
-pandas
-io
+pdf2image
+PyPDF2
+Pillow
