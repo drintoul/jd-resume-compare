@@ -7,7 +7,6 @@ def read_pdf_page(file, page_number):
 
     pdfReader = PdfReader(file)
     page = pdfReader.pages[page_number]
-    st.write(type(page.extract_text()))
     return page.extract_text()
 
 
@@ -41,10 +40,6 @@ def main():
 
         # Display the image in the first column
         col1.image(image, caption=f"Page {selected_page + 1}")
-
-        # Display the content of the selected page in the second column
-        # if "page_text" not in st.session_state:
-        #     st.session_state.page_text =
 
         col2.text_area("Text", height=800, value=read_pdf_page(pdf_file, selected_page),
                        key="my_text_area", on_change=on_text_area_change)
