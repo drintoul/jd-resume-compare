@@ -1,7 +1,7 @@
-# resume-highlighter
+# pii-finder
 
-Compare (pasted) Job Description with (uploaded) Resume
+Upload PDF (or DOC/DOCX in future!) and parse for PII
 
 Inspiration: https://github.com/kkdai/pdf_online_editor/tree/master
 
-<a href="https://app-pdf-extractor.streamlit.app" rel="nofollow"><img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Streamlit App" data-canonical-src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" style="max-width: 100%;"></a>
+<a href="https://pii-finder.streamlit.app" rel="nofollow"><img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Streamlit App" data-canonical-src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" style="max-width: 100%;"></a>
